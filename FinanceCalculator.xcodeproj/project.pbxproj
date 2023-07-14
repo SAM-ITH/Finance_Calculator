@@ -39,6 +39,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1983DCF92A61BD77006E2AA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19DC42952A4CA94900BBC177 /* AppDelegate.swift */,
+				19DC42972A4CA94900BBC177 /* SceneDelegate.swift */,
+				19DC42A12A4CA94A00BBC177 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1983DCFA2A61BD8C006E2AA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19DC429B2A4CA94900BBC177 /* Main.storyboard */,
+				19DC42A32A4CA94A00BBC177 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1983DCFB2A61BDA1006E2AA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				19DC42992A4CA94900BBC177 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1983DCFC2A61BDF0006E2AA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		19DC42892A4CA94900BBC177 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +92,10 @@
 		19DC42942A4CA94900BBC177 /* FinanceCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				19DC42952A4CA94900BBC177 /* AppDelegate.swift */,
-				19DC42972A4CA94900BBC177 /* SceneDelegate.swift */,
-				19DC42992A4CA94900BBC177 /* ViewController.swift */,
-				19DC429B2A4CA94900BBC177 /* Main.storyboard */,
-				19DC42A12A4CA94A00BBC177 /* Assets.xcassets */,
-				19DC42A32A4CA94A00BBC177 /* LaunchScreen.storyboard */,
+				1983DCFC2A61BDF0006E2AA9 /* Models */,
+				1983DCFB2A61BDA1006E2AA9 /* Controllers */,
+				1983DCFA2A61BD8C006E2AA9 /* Views */,
+				1983DCF92A61BD77006E2AA9 /* Resources */,
 				19DC42A62A4CA94A00BBC177 /* Info.plist */,
 				19DC429E2A4CA94900BBC177 /* FinanceCalculator.xcdatamodeld */,
 			);
