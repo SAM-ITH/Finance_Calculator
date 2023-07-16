@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195F52C52A6312EB00FB7D9A /* CustomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F52C42A6312EB00FB7D9A /* CustomLabels.swift */; };
+		195F52C72A63180300FB7D9A /* SF-Mono-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 195F52C62A63180300FB7D9A /* SF-Mono-Semibold.otf */; };
+		195F52CA2A631AAD00FB7D9A /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F52C92A631AAD00FB7D9A /* CustomTextFields.swift */; };
 		1983DCFE2A61CC3C006E2AA9 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983DCFD2A61CC3C006E2AA9 /* LoanViewController.swift */; };
 		1983DD002A61CC97006E2AA9 /* MortageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983DCFF2A61CC97006E2AA9 /* MortageViewController.swift */; };
 		19DC42962A4CA94900BBC177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC42952A4CA94900BBC177 /* AppDelegate.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		195F52C42A6312EB00FB7D9A /* CustomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabels.swift; sourceTree = "<group>"; };
+		195F52C62A63180300FB7D9A /* SF-Mono-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Semibold.otf"; sourceTree = "<group>"; };
+		195F52C92A631AAD00FB7D9A /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
 		1983DCFD2A61CC3C006E2AA9 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
 		1983DCFF2A61CC97006E2AA9 /* MortageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortageViewController.swift; sourceTree = "<group>"; };
 		19DC42922A4CA94900BBC177 /* FinanceCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195F52C32A6312B400FB7D9A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				195F52C82A631A7E00FB7D9A /* Fonts */,
+				195F52C42A6312EB00FB7D9A /* CustomLabels.swift */,
+				195F52C92A631AAD00FB7D9A /* CustomTextFields.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		195F52C82A631A7E00FB7D9A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				195F52C62A63180300FB7D9A /* SF-Mono-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1983DCF92A61BD77006E2AA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +122,7 @@
 		19DC42942A4CA94900BBC177 /* FinanceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				195F52C32A6312B400FB7D9A /* Helpers */,
 				1983DCFC2A61BDF0006E2AA9 /* Models */,
 				1983DCFB2A61BDA1006E2AA9 /* Controllers */,
 				1983DCFA2A61BD8C006E2AA9 /* Views */,
@@ -168,6 +193,7 @@
 			files = (
 				19DC42A52A4CA94A00BBC177 /* LaunchScreen.storyboard in Resources */,
 				19DC42A22A4CA94A00BBC177 /* Assets.xcassets in Resources */,
+				195F52C72A63180300FB7D9A /* SF-Mono-Semibold.otf in Resources */,
 				19DC429D2A4CA94900BBC177 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,8 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195F52CA2A631AAD00FB7D9A /* CustomTextFields.swift in Sources */,
 				19DC42A02A4CA94900BBC177 /* FinanceCalculator.xcdatamodeld in Sources */,
 				1983DCFE2A61CC3C006E2AA9 /* LoanViewController.swift in Sources */,
+				195F52C52A6312EB00FB7D9A /* CustomLabels.swift in Sources */,
 				19DC429A2A4CA94900BBC177 /* SavingsViewController.swift in Sources */,
 				19DC42962A4CA94900BBC177 /* AppDelegate.swift in Sources */,
 				1983DD002A61CC97006E2AA9 /* MortageViewController.swift in Sources */,
