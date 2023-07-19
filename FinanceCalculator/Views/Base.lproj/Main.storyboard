@@ -76,23 +76,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HgH-hK-ffi">
-                                <rect key="frame" x="-3" y="60" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <navigationItem title="Loans" id="k2s-Sg-dlR"/>
-                                </items>
-                                <navigationBarAppearance key="standardAppearance">
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </navigationBarAppearance>
-                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2Pu-ij-QFo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="668"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QV6-tH-Aas">
+                                <rect key="frame" x="31" y="188" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3wI-Bx-FMA">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" name="BlurBackground"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OZ0-mI-fUH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="PrimaryBackground"/>
+                        <constraints>
+                            <constraint firstItem="2Pu-ij-QFo" firstAttribute="top" secondItem="wK0-gb-ulp" secondAttribute="top" id="aaB-VO-dHl"/>
+                            <constraint firstItem="OZ0-mI-fUH" firstAttribute="trailing" secondItem="2Pu-ij-QFo" secondAttribute="trailing" id="bco-Xc-9o8"/>
+                            <constraint firstItem="2Pu-ij-QFo" firstAttribute="leading" secondItem="OZ0-mI-fUH" secondAttribute="leading" id="ykd-6f-U3c"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Loans" id="D7s-0T-ILO">
                         <imageReference key="image" image="creditcard.circle" catalog="system" symbolScale="large"/>
@@ -100,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZK-jV-Sra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="732"/>
+            <point key="canvasLocation" x="75.362318840579718" y="731.91964285714278"/>
         </scene>
         <!--MortageView-->
         <scene sceneID="Q48-u6-JbQ">
@@ -125,22 +129,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V1M-HV-ud2" userLabel="Main Stack">
                                 <rect key="frame" x="20" y="68" width="374" height="585"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-dd-6Ew" userLabel="Top Label Stack">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="56"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-dd-6Ew" userLabel="Top Label Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="57"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mortage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGv-JS-com">
-                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="33.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCz-yh-x3O" userLabel="MortageHelpBtn">
+                                                <rect key="frame" x="320" y="0.0" width="34" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="34" id="m9C-6T-Wo7"/>
+                                                    <constraint firstAttribute="height" constant="34" id="saD-As-zEN"/>
+                                                </constraints>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="info.circle" catalog="system"/>
+                                                <connections>
+                                                    <segue destination="WLX-0F-i4e" kind="presentation" id="7IT-9M-Cjb"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="reE-Un-oFF" userLabel="Fill Detail Stack">
-                                        <rect key="frame" x="0.0" y="76" width="354" height="449"/>
+                                        <rect key="frame" x="0.0" y="77" width="354" height="448"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CRQ-tK-Fh5" userLabel="Loan Stack">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="101"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="100.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r1B-BK-Hd5">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50.5"/>
@@ -154,10 +171,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jhi-66-3G3">
-                                                        <rect key="frame" x="0.0" y="55.5" width="354" height="45.5"/>
+                                                        <rect key="frame" x="0.0" y="55.5" width="354" height="45"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-59-TWQ" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="45.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
@@ -172,7 +189,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DWa-zK-Hhf" userLabel="Interest Stack">
-                                                <rect key="frame" x="0.0" y="116" width="354" height="101"/>
+                                                <rect key="frame" x="0.0" y="115.5" width="354" height="101"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-4P-5JM">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
@@ -198,7 +215,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2oe-EB-IAG" userLabel="Payment Stack">
-                                                <rect key="frame" x="0.0" y="232" width="354" height="101"/>
+                                                <rect key="frame" x="0.0" y="231.5" width="354" height="101"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TKT-ge-j1V">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
@@ -212,10 +229,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nbO-mF-CD9">
-                                                        <rect key="frame" x="0.0" y="56" width="354" height="45"/>
+                                                        <rect key="frame" x="0.0" y="56" width="354" height="44.5"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-tW-95r" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="44.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -224,7 +241,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tfD-le-kAD" userLabel="No of years Stack">
-                                                <rect key="frame" x="0.0" y="348" width="354" height="101"/>
+                                                <rect key="frame" x="0.0" y="347" width="354" height="101"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jo0-Cn-Orr">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
@@ -318,12 +335,31 @@
             </objects>
             <point key="canvasLocation" x="1130.4347826086957" y="731.25"/>
         </scene>
+        <!--MortageHelpView-->
+        <scene sceneID="lIu-TE-LhX">
+            <objects>
+                <viewController title="MortageHelpView" id="WLX-0F-i4e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8vQ-9C-Kg2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rR1-Ng-KU1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBD-lR-lxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="1536"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background" width="390" height="668"/>
         <image name="creditcard.circle" catalog="system" width="128" height="123"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="123"/>
         <image name="house.circle" catalog="system" width="128" height="123"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.3843137254901961" green="0.20392156862745098" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="BlurBackground">
             <color red="1" green="1" blue="1" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
