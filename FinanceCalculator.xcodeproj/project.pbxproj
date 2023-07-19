@@ -12,6 +12,8 @@
 		195F52CA2A631AAD00FB7D9A /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F52C92A631AAD00FB7D9A /* CustomTextFields.swift */; };
 		1983DCFE2A61CC3C006E2AA9 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983DCFD2A61CC3C006E2AA9 /* LoanViewController.swift */; };
 		1983DD002A61CC97006E2AA9 /* MortageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983DCFF2A61CC97006E2AA9 /* MortageViewController.swift */; };
+		19B3A7112A66FBDE004C1938 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3A7102A66FBDE004C1938 /* CardView.swift */; };
+		19B3A7132A677C4E004C1938 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3A7122A677C4E004C1938 /* CustomButton.swift */; };
 		19DC42962A4CA94900BBC177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC42952A4CA94900BBC177 /* AppDelegate.swift */; };
 		19DC42982A4CA94900BBC177 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC42972A4CA94900BBC177 /* SceneDelegate.swift */; };
 		19DC429A2A4CA94900BBC177 /* SavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC42992A4CA94900BBC177 /* SavingsViewController.swift */; };
@@ -27,6 +29,8 @@
 		195F52C92A631AAD00FB7D9A /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
 		1983DCFD2A61CC3C006E2AA9 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
 		1983DCFF2A61CC97006E2AA9 /* MortageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortageViewController.swift; sourceTree = "<group>"; };
+		19B3A7102A66FBDE004C1938 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		19B3A7122A677C4E004C1938 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		19DC42922A4CA94900BBC177 /* FinanceCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DC42952A4CA94900BBC177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19DC42972A4CA94900BBC177 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +56,10 @@
 		195F52C32A6312B400FB7D9A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				195F52C82A631A7E00FB7D9A /* Fonts */,
+				19B3A7102A66FBDE004C1938 /* CardView.swift */,
 				195F52C42A6312EB00FB7D9A /* CustomLabels.swift */,
 				195F52C92A631AAD00FB7D9A /* CustomTextFields.swift */,
+				19B3A7122A677C4E004C1938 /* CustomButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -70,6 +75,7 @@
 		1983DCF92A61BD77006E2AA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				195F52C82A631A7E00FB7D9A /* Fonts */,
 				19DC42952A4CA94900BBC177 /* AppDelegate.swift */,
 				19DC42972A4CA94900BBC177 /* SceneDelegate.swift */,
 				19DC42A12A4CA94A00BBC177 /* Assets.xcassets */,
@@ -206,8 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				195F52CA2A631AAD00FB7D9A /* CustomTextFields.swift in Sources */,
+				19B3A7112A66FBDE004C1938 /* CardView.swift in Sources */,
 				19DC42A02A4CA94900BBC177 /* FinanceCalculator.xcdatamodeld in Sources */,
 				1983DCFE2A61CC3C006E2AA9 /* LoanViewController.swift in Sources */,
+				19B3A7132A677C4E004C1938 /* CustomButton.swift in Sources */,
 				195F52C52A6312EB00FB7D9A /* CustomLabels.swift in Sources */,
 				19DC429A2A4CA94900BBC177 /* SavingsViewController.swift in Sources */,
 				19DC42962A4CA94900BBC177 /* AppDelegate.swift in Sources */,
