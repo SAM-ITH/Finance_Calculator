@@ -46,37 +46,50 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="0I9-P7-o54">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX5-vx-1Sz">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX5-vx-1Sz" customClass="cardViewModifiers" customModule="FinanceCalculator" customModuleProvider="target">
                                 <rect key="frame" x="8" y="58" width="391" height="705"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fYU-90-qbw">
                                     <rect key="frame" x="0.0" y="0.0" width="391" height="705"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fK3-0B-HUS" userLabel="Savings Main Stack">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fK3-0B-HUS" userLabel="Savings Main Stack">
                                             <rect key="frame" x="10" y="10" width="371" height="685"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-Us-AN6" userLabel="SavingsHeaderLabel">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99.5" height="40"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-Us-AN6" userLabel="SavingsHeaderLabel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="47.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="656-Q5-DNX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="99.5" height="40"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="337" height="33"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSn-Ic-LSy">
+                                                            <rect key="frame" x="337" y="0.0" width="34" height="34"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="34" id="W1P-80-BKL"/>
+                                                                <constraint firstAttribute="width" constant="34" id="kCe-7Q-Pcp"/>
+                                                            </constraints>
+                                                            <color key="tintColor" name="AccentColor"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="info.circle" catalog="system"/>
+                                                            <connections>
+                                                                <segue destination="Teh-8m-3fX" kind="presentation" id="7ok-TU-coK"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8eC-g7-Lrr" userLabel="SavingsInfoStack">
-                                                    <rect key="frame" x="0.0" y="48" width="371" height="603"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8eC-g7-Lrr" userLabel="SavingsInfoStack">
+                                                    <rect key="frame" x="0.0" y="67.5" width="371" height="555.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CR5-BH-knQ" userLabel="SavingPresentValueStack">
-                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="120.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="103"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s37-A7-yd5">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="45.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hys-Q3-vTl" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="45.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -84,10 +97,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F9T-yd-yKq">
-                                                                    <rect key="frame" x="0.0" y="53.5" width="371" height="67"/>
+                                                                    <rect key="frame" x="0.0" y="46.5" width="371" height="56.5"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-1D-lZQ" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="67"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="56.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -96,13 +109,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FyR-UA-fIz" userLabel="SavingFutureValueStack">
-                                                            <rect key="frame" x="0.0" y="128.5" width="371" height="121"/>
+                                                            <rect key="frame" x="0.0" y="113" width="371" height="103"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="513-W2-4dT">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="45.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03n-z0-Njc" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="45.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -110,10 +123,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JYl-Vn-oVq">
-                                                                    <rect key="frame" x="0.0" y="53.5" width="371" height="67.5"/>
+                                                                    <rect key="frame" x="0.0" y="46.5" width="371" height="56.5"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vul-13-baB" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="67.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="56.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -122,13 +135,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TfR-IN-pRJ" userLabel="SavingsInterestRateStack">
-                                                            <rect key="frame" x="0.0" y="257.5" width="371" height="120.5"/>
+                                                            <rect key="frame" x="0.0" y="226" width="371" height="103"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-ch-GN0">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="45"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest(%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-iy-kqu" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="45"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -136,10 +149,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-xK-inG">
-                                                                    <rect key="frame" x="0.0" y="53" width="371" height="67.5"/>
+                                                                    <rect key="frame" x="0.0" y="47" width="371" height="56"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-4H-1ep">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="67.5"/>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-4H-1ep" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="56"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -148,13 +161,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="q12-ZM-B8U" userLabel="SavingsNoOfPaymentStack">
-                                                            <rect key="frame" x="0.0" y="386" width="371" height="120.5"/>
+                                                            <rect key="frame" x="0.0" y="339" width="371" height="103.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5AZ-8A-MID">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="45.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Payments Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1j-OD-jl2" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="45.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -162,10 +175,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WkO-6g-ru3">
-                                                                    <rect key="frame" x="0.0" y="53.5" width="371" height="67"/>
+                                                                    <rect key="frame" x="0.0" y="47" width="371" height="56.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sy6-kg-pN9">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="67"/>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sy6-kg-pN9" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="56.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -173,14 +186,14 @@
                                                                 </stackView>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wqo-g3-2EA" userLabel="SavingsCompoundsPerYear">
-                                                            <rect key="frame" x="0.0" y="514.5" width="371" height="88.5"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wqo-g3-2EA" userLabel="SavingsCompoundsPerYear">
+                                                            <rect key="frame" x="0.0" y="452.5" width="371" height="103"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="alx-V9-5y3">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="160.5" height="33.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compounds Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc9-Vb-aMr" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="160.5" height="33.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -188,25 +201,23 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BRN-CO-DUJ">
-                                                                    <rect key="frame" x="0.0" y="41.5" width="371" height="47"/>
+                                                                    <rect key="frame" x="0.0" y="46.5" width="371" height="56.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puv-NO-f1x">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="47"/>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puv-NO-f1x" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="56.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
-                                                            <constraints>
-                                                                <constraint firstAttribute="trailing" secondItem="BRN-CO-DUJ" secondAttribute="trailing" id="Bo2-8K-mSi"/>
-                                                                <constraint firstItem="BRN-CO-DUJ" firstAttribute="leading" secondItem="Wqo-g3-2EA" secondAttribute="leading" id="h0v-iq-rdt"/>
-                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="q12-ZM-B8U" secondAttribute="trailing" id="1fl-cZ-JZs"/>
                                                         <constraint firstAttribute="trailing" secondItem="Wqo-g3-2EA" secondAttribute="trailing" id="3zi-o9-3ls"/>
+                                                        <constraint firstItem="TfR-IN-pRJ" firstAttribute="leading" secondItem="8eC-g7-Lrr" secondAttribute="leading" id="68B-6o-NF4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="TfR-IN-pRJ" secondAttribute="trailing" id="8ao-8u-VRq"/>
                                                         <constraint firstItem="FyR-UA-fIz" firstAttribute="leading" secondItem="8eC-g7-Lrr" secondAttribute="leading" id="9oM-9T-Vyd"/>
                                                         <constraint firstAttribute="trailing" secondItem="CR5-BH-knQ" secondAttribute="trailing" id="aIU-Ha-yPR"/>
                                                         <constraint firstItem="q12-ZM-B8U" firstAttribute="leading" secondItem="8eC-g7-Lrr" secondAttribute="leading" id="djy-e4-0od"/>
@@ -215,18 +226,26 @@
                                                         <constraint firstItem="Wqo-g3-2EA" firstAttribute="leading" secondItem="8eC-g7-Lrr" secondAttribute="leading" id="ijb-aN-6NL"/>
                                                     </constraints>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5iI-aS-OGT" userLabel="SavingsBtn">
-                                                    <rect key="frame" x="0.0" y="659" width="75" height="26"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5iI-aS-OGT" userLabel="SavingsBtn">
+                                                    <rect key="frame" x="0.0" y="643" width="371" height="42"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-fQ-IzL" customClass="CustomButton" customModule="FinanceCalculator" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="75" height="26"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="42"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="42" id="I03-7e-npJ"/>
+                                                            </constraints>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Pbg-Us-AN6" firstAttribute="top" secondItem="fK3-0B-HUS" secondAttribute="top" id="6nS-x6-rlQ"/>
+                                                <constraint firstItem="Pbg-Us-AN6" firstAttribute="leading" secondItem="fK3-0B-HUS" secondAttribute="leading" id="BbJ-I8-h0k"/>
+                                                <constraint firstItem="5iI-aS-OGT" firstAttribute="leading" secondItem="fK3-0B-HUS" secondAttribute="leading" id="Qqn-f7-RIQ"/>
+                                                <constraint firstItem="5iI-aS-OGT" firstAttribute="trailing" secondItem="fK3-0B-HUS" secondAttribute="trailing" id="Vg4-gC-LRT"/>
+                                                <constraint firstAttribute="trailing" secondItem="Pbg-Us-AN6" secondAttribute="trailing" id="a2M-s2-iKs"/>
                                                 <constraint firstAttribute="trailing" secondItem="8eC-g7-Lrr" secondAttribute="trailing" id="fah-d0-mVA"/>
                                                 <constraint firstItem="8eC-g7-Lrr" firstAttribute="leading" secondItem="fK3-0B-HUS" secondAttribute="leading" id="nGi-rt-YI7"/>
                                             </constraints>
@@ -285,7 +304,7 @@
                                             <rect key="frame" x="10" y="10" width="371" height="685"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="uK5-bg-pfZ" userLabel="LoansHeader">
-                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="42.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="41"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trh-8t-rLA">
                                                             <rect key="frame" x="0.0" y="0.0" width="337" height="33"/>
@@ -308,11 +327,11 @@
                                                         </button>
                                                     </subviews>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="XHf-7t-l4l" userLabel="LoansFillDetails">
-                                                    <rect key="frame" x="0.0" y="75.5" width="371" height="536.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XHf-7t-l4l" userLabel="LoansFillDetails">
+                                                    <rect key="frame" x="0.0" y="74" width="371" height="538"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FGl-li-UNe" userLabel="Present Value Stack">
-                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="72"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="81.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="buf-2X-sRS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
@@ -326,10 +345,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1r2-oi-j6L">
-                                                                    <rect key="frame" x="0.0" y="20.5" width="371" height="51.5"/>
+                                                                    <rect key="frame" x="0.0" y="20.5" width="371" height="61"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-aF-fxO" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="51.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="61"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -338,7 +357,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UTz-bR-2M0" userLabel="Future Value Stack">
-                                                            <rect key="frame" x="0.0" y="81" width="371" height="82.5"/>
+                                                            <rect key="frame" x="0.0" y="91.5" width="371" height="81.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d1a-hu-Glp">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
@@ -352,10 +371,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k45-wp-Ebk">
-                                                                    <rect key="frame" x="0.0" y="28.5" width="371" height="54"/>
+                                                                    <rect key="frame" x="0.0" y="28.5" width="371" height="53"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vF-zk-Htx" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="54"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="53"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -370,7 +389,7 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Du4-Dp-0qq" userLabel="Interest Stack">
-                                                            <rect key="frame" x="0.0" y="172.5" width="371" height="83"/>
+                                                            <rect key="frame" x="0.0" y="183" width="371" height="81"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-rr-8kk">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
@@ -384,10 +403,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9E2-g0-crT">
-                                                                    <rect key="frame" x="0.0" y="28.5" width="371" height="54.5"/>
+                                                                    <rect key="frame" x="0.0" y="28.5" width="371" height="52.5"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-1N-VNX" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="54.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="52.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -402,7 +421,7 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l8o-St-u3I" userLabel="No of Pay Stack">
-                                                            <rect key="frame" x="0.0" y="264.5" width="371" height="82.5"/>
+                                                            <rect key="frame" x="0.0" y="274" width="371" height="81.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bbu-YI-RZR">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
@@ -416,10 +435,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qWN-4j-xxE">
-                                                                    <rect key="frame" x="0.0" y="28.5" width="371" height="54"/>
+                                                                    <rect key="frame" x="0.0" y="28.5" width="371" height="53"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-oJ-6MG" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="54"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="53"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -434,7 +453,7 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0kH-LP-cKK" userLabel="Payments year Stack">
-                                                            <rect key="frame" x="0.0" y="356" width="371" height="74.5"/>
+                                                            <rect key="frame" x="0.0" y="365.5" width="371" height="81"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ggN-L2-uSB">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
@@ -448,10 +467,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="npc-Pe-8xf">
-                                                                    <rect key="frame" x="0.0" y="22.5" width="371" height="52"/>
+                                                                    <rect key="frame" x="0.0" y="22.5" width="371" height="58.5"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="66I-fs-qdx" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="52"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="58.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -466,7 +485,7 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-Jb-wUm" userLabel="Payments Stack">
-                                                            <rect key="frame" x="0.0" y="439.5" width="371" height="97"/>
+                                                            <rect key="frame" x="0.0" y="456.5" width="371" height="81.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-dU-piW">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
@@ -480,10 +499,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FmV-ii-46s">
-                                                                    <rect key="frame" x="0.0" y="28.5" width="371" height="68.5"/>
+                                                                    <rect key="frame" x="0.0" y="28.5" width="371" height="53"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LE-Cv-fJy" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="68.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="53"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -593,7 +612,7 @@
                                 <rect key="frame" x="20" y="68" width="374" height="585"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-dd-6Ew" userLabel="Top Label Stack">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="48.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mortage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGv-JS-com">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="33.5"/>
@@ -617,16 +636,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="reE-Un-oFF" userLabel="Fill Detail Stack">
-                                        <rect key="frame" x="0.0" y="77" width="354" height="448"/>
+                                        <rect key="frame" x="0.0" y="68.5" width="354" height="456.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CRQ-tK-Fh5" userLabel="Loan Stack">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="100.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="103"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r1B-BK-Hd5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="38.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSp-wK-V8I" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="50.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="38.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -634,10 +653,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jhi-66-3G3">
-                                                        <rect key="frame" x="0.0" y="55.5" width="354" height="45"/>
+                                                        <rect key="frame" x="0.0" y="43.5" width="354" height="59.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-59-TWQ" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-59-TWQ" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="59.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
@@ -652,13 +671,13 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DWa-zK-Hhf" userLabel="Interest Stack">
-                                                <rect key="frame" x="0.0" y="115.5" width="354" height="101"/>
+                                                <rect key="frame" x="0.0" y="118" width="354" height="102.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-4P-5JM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="39"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmt-6c-gTT" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="39"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -666,10 +685,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CsM-IV-dyw">
-                                                        <rect key="frame" x="0.0" y="56" width="354" height="45"/>
+                                                        <rect key="frame" x="0.0" y="44" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DoW-Zp-FUI" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DoW-Zp-FUI" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -678,13 +697,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2oe-EB-IAG" userLabel="Payment Stack">
-                                                <rect key="frame" x="0.0" y="231.5" width="354" height="101"/>
+                                                <rect key="frame" x="0.0" y="235.5" width="354" height="103"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TKT-ge-j1V">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQh-y1-dKO" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -692,10 +711,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nbO-mF-CD9">
-                                                        <rect key="frame" x="0.0" y="56" width="354" height="44.5"/>
+                                                        <rect key="frame" x="0.0" y="44.5" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-tW-95r" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="44.5"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-tW-95r" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -704,13 +723,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tfD-le-kAD" userLabel="No of years Stack">
-                                                <rect key="frame" x="0.0" y="347" width="354" height="101"/>
+                                                <rect key="frame" x="0.0" y="353.5" width="354" height="103"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jo0-Cn-Orr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lv-ys-Z7O" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -718,10 +737,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Y9q-ng-nSZ">
-                                                        <rect key="frame" x="0.0" y="56" width="354" height="45"/>
+                                                        <rect key="frame" x="0.0" y="44.5" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-8A-yYB" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-8A-yYB" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
@@ -955,20 +974,20 @@
             <objects>
                 <viewController title="MortageHelpView" id="Teh-8m-3fX" userLabel="SaveHelpView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxr-5Y-SlD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HelperBackground" translatesAutoresizingMaskIntoConstraints="NO" id="tIY-hE-tcq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OP6-Za-Kxn">
-                                <rect key="frame" x="20" y="58" width="374" height="784"/>
+                                <rect key="frame" x="20" y="58" width="374" height="760"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TFM-Bh-lPy">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="784"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="760"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="TSh-4b-Vz9">
-                                            <rect key="frame" x="46" y="50" width="282" height="634"/>
+                                            <rect key="frame" x="46" y="50" width="282" height="610"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="coX-YK-EAR">
                                                     <rect key="frame" x="110.5" y="0.0" width="61.5" height="33.5"/>
@@ -982,10 +1001,10 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FJg-rq-hNj">
-                                                    <rect key="frame" x="0.0" y="75.5" width="282" height="558.5"/>
+                                                    <rect key="frame" x="0.0" y="75.5" width="282" height="534.5"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pSz-J3-inI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="282" height="558.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="282" height="534.5"/>
                                                             <color key="backgroundColor" name="BlurBackground"/>
                                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                             <color key="textColor" systemColor="labelColor"/>
@@ -1024,7 +1043,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Faj-jV-KzP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1042" y="1543"/>
+            <point key="canvasLocation" x="-1074" y="1544"/>
         </scene>
     </scenes>
     <resources>
