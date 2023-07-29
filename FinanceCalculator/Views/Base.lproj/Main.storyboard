@@ -38,7 +38,7 @@
         <!--SavingsView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="SavingsView" id="BYZ-38-t0r" customClass="SavingsViewController" customModule="FinanceCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SavingsView" id="BYZ-38-t0r" customClass="SavingsViewController" customModule="Estimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="0I9-P7-o54">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX5-vx-1Sz" customClass="cardViewModifiers" customModule="FinanceCalculator" customModuleProvider="target">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX5-vx-1Sz" customClass="cardViewModifiers" customModule="Estimer" customModuleProvider="target">
                                 <rect key="frame" x="8" y="58" width="391" height="705"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fYU-90-qbw">
                                     <rect key="frame" x="0.0" y="0.0" width="391" height="705"/>
@@ -88,7 +88,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s37-A7-yd5">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hys-Q3-vTl" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hys-Q3-vTl" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -99,7 +99,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F9T-yd-yKq">
                                                                     <rect key="frame" x="0.0" y="46.5" width="371" height="56.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-1D-lZQ" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-1D-lZQ" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="56.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -114,7 +114,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="513-W2-4dT">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03n-z0-Njc" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03n-z0-Njc" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -125,7 +125,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JYl-Vn-oVq">
                                                                     <rect key="frame" x="0.0" y="46.5" width="371" height="56.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vul-13-baB" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vul-13-baB" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="56.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -140,7 +140,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-ch-GN0">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest(%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-iy-kqu" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest(%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-iy-kqu" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -151,7 +151,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-xK-inG">
                                                                     <rect key="frame" x="0.0" y="47" width="371" height="56"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-4H-1ep" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-4H-1ep" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="56"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -166,7 +166,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5AZ-8A-MID">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Payments Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1j-OD-jl2" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Payments Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1j-OD-jl2" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -177,7 +177,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WkO-6g-ru3">
                                                                     <rect key="frame" x="0.0" y="47" width="371" height="56.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sy6-kg-pN9" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sy6-kg-pN9" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="56.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -192,7 +192,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="alx-V9-5y3">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compounds Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc9-Vb-aMr" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compounds Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc9-Vb-aMr" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="38.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -203,7 +203,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BRN-CO-DUJ">
                                                                     <rect key="frame" x="0.0" y="46.5" width="371" height="56.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puv-NO-f1x" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puv-NO-f1x" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="56.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -229,7 +229,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5iI-aS-OGT" userLabel="SavingsBtn">
                                                     <rect key="frame" x="0.0" y="643" width="371" height="42"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-fQ-IzL" customClass="CustomButton" customModule="FinanceCalculator" customModuleProvider="target">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-fQ-IzL" customClass="CustomButton" customModule="Estimer" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="42"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="42" id="I03-7e-npJ"/>
@@ -286,7 +286,7 @@
         <!--LoanView-->
         <scene sceneID="Vsi-vM-SZ8">
             <objects>
-                <viewController title="LoanView" id="WHW-pS-f5d" customClass="LoanViewController" customModule="FinanceCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LoanView" id="WHW-pS-f5d" customClass="LoanViewController" customModule="Estimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wK0-gb-ulp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,7 +294,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2Pu-ij-QFo">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="668"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QV6-tH-Aas" customClass="cardViewModifiers" customModule="FinanceCalculator" customModuleProvider="target">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QV6-tH-Aas" customClass="cardViewModifiers" customModule="Estimer" customModuleProvider="target">
                                 <rect key="frame" x="8" y="58" width="391" height="705"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3wI-Bx-FMA">
                                     <rect key="frame" x="0.0" y="0.0" width="391" height="705"/>
@@ -336,7 +336,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="buf-2X-sRS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEB-r6-PtA" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEB-r6-PtA" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -347,7 +347,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1r2-oi-j6L">
                                                                     <rect key="frame" x="0.0" y="20.5" width="371" height="61"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-aF-fxO" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-aF-fxO" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="61"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -362,7 +362,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d1a-hu-Glp">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hii-q1-YC9" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hii-q1-YC9" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -373,7 +373,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k45-wp-Ebk">
                                                                     <rect key="frame" x="0.0" y="28.5" width="371" height="53"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vF-zk-Htx" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vF-zk-Htx" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="53"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -394,7 +394,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-rr-8kk">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest(%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXq-Jc-teA" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest(%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXq-Jc-teA" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -405,7 +405,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9E2-g0-crT">
                                                                     <rect key="frame" x="0.0" y="28.5" width="371" height="52.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-1N-VNX" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-1N-VNX" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="52.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -426,7 +426,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bbu-YI-RZR">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Payments Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4f-5P-EA4" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Payments Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4f-5P-EA4" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -437,7 +437,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qWN-4j-xxE">
                                                                     <rect key="frame" x="0.0" y="28.5" width="371" height="53"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-oJ-6MG" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-oJ-6MG" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="53"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -458,7 +458,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ggN-L2-uSB">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compounds Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y82-JJ-qIZ" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compounds Per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y82-JJ-qIZ" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -469,7 +469,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="npc-Pe-8xf">
                                                                     <rect key="frame" x="0.0" y="22.5" width="371" height="58.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="66I-fs-qdx" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="66I-fs-qdx" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="58.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -490,7 +490,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-dU-piW">
                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDY-er-8ER" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDY-er-8ER" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -501,7 +501,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FmV-ii-46s">
                                                                     <rect key="frame" x="0.0" y="28.5" width="371" height="53"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LE-Cv-fJy" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LE-Cv-fJy" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="53"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -535,13 +535,16 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-SD-Iav" userLabel="Button Stack">
                                                     <rect key="frame" x="0.0" y="645" width="371" height="40"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzK-Te-AZU" customClass="CustomButton" customModule="FinanceCalculator" customModuleProvider="target">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzK-Te-AZU" customClass="CustomButton" customModule="Estimer" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="40"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="Ngj-7h-Q39"/>
                                                             </constraints>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
+                                                            <connections>
+                                                                <action selector="calculateLoanBTN:" destination="WHW-pS-f5d" eventType="touchUpInside" id="iqm-2z-EVK"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -583,6 +586,14 @@
                     <tabBarItem key="tabBarItem" title="Loans" id="D7s-0T-ILO">
                         <imageReference key="image" image="creditcard.circle" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="loanCompoundYearTF" destination="66I-fs-qdx" id="ot6-9s-GcU"/>
+                        <outlet property="loanFutureValueTF" destination="4vF-zk-Htx" id="jR5-AK-0TH"/>
+                        <outlet property="loanInterestTF" destination="jUg-1N-VNX" id="Kea-ng-s0f"/>
+                        <outlet property="loanNoPaymentsTF" destination="L4b-oJ-6MG" id="lKR-3T-1av"/>
+                        <outlet property="loanPaymentTF" destination="5LE-Cv-fJy" id="j7n-AE-jJA"/>
+                        <outlet property="loandPresentValueTF" destination="NCb-aF-fxO" id="dXv-QU-Mgl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZK-jV-Sra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -591,7 +602,7 @@
         <!--MortageView-->
         <scene sceneID="Q48-u6-JbQ">
             <objects>
-                <viewController title="MortageView" id="sK4-6G-r3X" customClass="MortageViewController" customModule="FinanceCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MortageView" id="sK4-6G-r3X" customClass="MortageViewController" customModule="Estimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1US-7A-Ktp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -599,7 +610,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="eri-MZ-enZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="668"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kg9-YC-QAF" customClass="cardViewModifiers" customModule="FinanceCalculator" customModuleProvider="target">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kg9-YC-QAF" customClass="cardViewModifiers" customModule="Estimer" customModuleProvider="target">
                                 <rect key="frame" x="8" y="58" width="391" height="615"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="47d-xD-kDe">
                                     <rect key="frame" x="0.0" y="0.0" width="391" height="615"/>
@@ -644,7 +655,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r1B-BK-Hd5">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="38.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSp-wK-V8I" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSp-wK-V8I" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="38.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                                 <nil key="textColor"/>
@@ -655,7 +666,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jhi-66-3G3">
                                                         <rect key="frame" x="0.0" y="43.5" width="354" height="59.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-59-TWQ" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-59-TWQ" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="59.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -676,7 +687,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RTH-4P-5JM">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="39"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmt-6c-gTT" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmt-6c-gTT" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="39"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
@@ -687,7 +698,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CsM-IV-dyw">
                                                         <rect key="frame" x="0.0" y="44" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DoW-Zp-FUI" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DoW-Zp-FUI" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -702,7 +713,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TKT-ge-j1V">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQh-y1-dKO" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQh-y1-dKO" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
@@ -713,7 +724,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nbO-mF-CD9">
                                                         <rect key="frame" x="0.0" y="44.5" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-tW-95r" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-tW-95r" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -728,7 +739,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jo0-Cn-Orr">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lv-ys-Z7O" customClass="CustomLabels" customModule="FinanceCalculator" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lv-ys-Z7O" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="39.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
@@ -739,7 +750,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Y9q-ng-nSZ">
                                                         <rect key="frame" x="0.0" y="44.5" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-8A-yYB" customClass="CustomTextFields" customModule="FinanceCalculator" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-8A-yYB" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -769,7 +780,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PcX-rq-0qm" userLabel="Button Stack">
                                         <rect key="frame" x="0.0" y="545" width="354" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-tm-VIC" customClass="CustomButton" customModule="FinanceCalculator" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-tm-VIC" customClass="CustomButton" customModule="Estimer" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="40"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -778,6 +789,9 @@
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Calculate" titleAlignment="center"/>
+                                                <connections>
+                                                    <action selector="calculateMortage:" destination="sK4-6G-r3X" eventType="touchUpInside" id="TSr-bw-ODZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -812,6 +826,12 @@
                     <tabBarItem key="tabBarItem" title="Mortage" id="God-XZ-sT5">
                         <imageReference key="image" image="house.circle" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="MortageLoanAmountTF" destination="yBd-59-TWQ" id="IcL-5s-f9i"/>
+                        <outlet property="mortageInterestTF" destination="DoW-Zp-FUI" id="LOj-0d-j77"/>
+                        <outlet property="mortageNoOfYearsTF" destination="KH5-8A-yYB" id="99H-g6-eWu"/>
+                        <outlet property="mortagePaymentTF" destination="vQv-tW-95r" id="iXi-5e-UyQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1K1-MC-udN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
