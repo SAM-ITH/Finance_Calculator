@@ -8,7 +8,8 @@
 import UIKit
 
 class LoanViewController: UIViewController, UITextFieldDelegate {
-
+    
+    let defaults = UserDefaults.standard
     @IBOutlet weak var loanAmountTF: CustomTextFields!
     @IBOutlet weak var InterestTF: CustomTextFields!
     @IBOutlet weak var monthlyPaymentTF: CustomTextFields!
@@ -33,6 +34,10 @@ class LoanViewController: UIViewController, UITextFieldDelegate {
         validateTextFields()
     }
      
+    @IBAction func appliedSavedData(_ sender: Any) {
+        applySavedValuesToTF()
+    }
+    
     // MARK: calculating the missing element
     func calculateMissingElementInLoans() {
         loanAmount = Double(loanAmountTF.text!) ?? 0.0
@@ -104,6 +109,7 @@ class LoanViewController: UIViewController, UITextFieldDelegate {
             displayNoFieldsEmptyAlert()
         } else if emptyFieldCount == 1 {
             calculateMissingElementInLoans()
+            saveValuesToUserDefaults()
         } else {
             // More than one field is empty
             displayFieldsEmptyAlert()
@@ -122,6 +128,29 @@ class LoanViewController: UIViewController, UITextFieldDelegate {
          let alert = UIAlertController(title: "Alert", message: "Two or more fileds are empty, Please leave blank only the value you want to count", preferredStyle: .alert)
          alert.addAction(UIAlertAction(title: "OK", style: .default))
          self.present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: user defaults
+    func saveValuesToUserDefaults() {
+        defaults.set(loanAmount, forKey: "loanAmount")
+        defaults.set(interestRate, forKey: "interestRate")
+        defaults.set(monthlyPayment, forKey: "monthlyPayment")
+        defaults.set(totalNumberOfPayments, forKey: "totalNumberOfPayments")
+    }
+    
+    func applySavedValuesToTF(){
+        if let loanAmount = defaults.string(forKey: "loanAmount") {
+                loanAmountTF.text = loanAmount
+            }
+        if let interestRate = defaults.string(forKey: "interestRate") {
+                InterestTF.text = interestRate
+            }
+        if let monthlyPayment = defaults.string(forKey: "monthlyPayment") {
+                monthlyPaymentTF.text = monthlyPayment
+            }
+        if let totalNumberOfPayments = defaults.string(forKey: "totalNumberOfPayments") {
+                totalNumberOfPaymentsTF.text = totalNumberOfPayments
+            }
     }
     
     // MARK: bump up the view when the keyboard distrub the textfield

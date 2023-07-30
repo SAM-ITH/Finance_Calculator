@@ -436,22 +436,36 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FGl-li-UNe" userLabel="Present Value Stack">
                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="108.5"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="buf-2X-sRS">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="37.5"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buf-2X-sRS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="39"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEB-r6-PtA" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="37.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="221" height="39"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XR-hW-EVO">
+                                                                            <rect key="frame" x="221" y="0.0" width="150" height="39"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="150" id="15a-Jr-NCw"/>
+                                                                            </constraints>
+                                                                            <color key="tintColor" name="AccentColor"/>
+                                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                            <state key="normal" title=" Saved Data" image="book.circle" catalog="system">
+                                                                                <color key="titleColor" name="AccentColor"/>
+                                                                            </state>
+                                                                            <connections>
+                                                                                <action selector="appliedSavedData:" destination="WHW-pS-f5d" eventType="touchUpInside" id="V8L-EZ-exw"/>
+                                                                            </connections>
+                                                                        </button>
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1r2-oi-j6L">
-                                                                    <rect key="frame" x="0.0" y="42.5" width="371" height="66"/>
+                                                                    <rect key="frame" x="0.0" y="44" width="371" height="64.5"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-aF-fxO" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="66"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="64.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -1139,6 +1153,7 @@
     <resources>
         <image name="Background" width="390" height="668"/>
         <image name="HelperBackground" width="330" height="492"/>
+        <image name="book.circle" catalog="system" width="128" height="123"/>
         <image name="creditcard.circle" catalog="system" width="128" height="123"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="123"/>
         <image name="house.circle" catalog="system" width="128" height="123"/>
