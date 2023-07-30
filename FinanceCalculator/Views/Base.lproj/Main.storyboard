@@ -102,7 +102,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F9T-yd-yKq">
                                                                             <rect key="frame" x="0.0" y="68" width="371" height="60"/>
                                                                             <subviews>
-                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-1D-lZQ" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-1D-lZQ" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="60"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="60" id="cdx-7e-6ED"/>
@@ -131,7 +131,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JYl-Vn-oVq">
                                                                             <rect key="frame" x="0.0" y="68" width="371" height="60"/>
                                                                             <subviews>
-                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vul-13-baB" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vul-13-baB" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="60"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="60" id="esd-FN-Ws1"/>
@@ -160,7 +160,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-xK-inG">
                                                                             <rect key="frame" x="0.0" y="68" width="371" height="60"/>
                                                                             <subviews>
-                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-4H-1ep" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-4H-1ep" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="60"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="60" id="eFJ-V8-h1o"/>
@@ -189,7 +189,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WkO-6g-ru3">
                                                                             <rect key="frame" x="0.0" y="68" width="371" height="60"/>
                                                                             <subviews>
-                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sy6-kg-pN9" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Sy6-kg-pN9" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="60"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="60" id="UdB-Az-lh4"/>
@@ -218,7 +218,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BRN-CO-DUJ">
                                                                             <rect key="frame" x="0.0" y="68" width="371" height="60"/>
                                                                             <subviews>
-                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puv-NO-f1x" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="puv-NO-f1x" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="60"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="60" id="n2S-kv-Wr4"/>
@@ -265,7 +265,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ns9-kk-Q6i">
                                                                             <rect key="frame" x="0.0" y="140" width="371" height="60"/>
                                                                             <subviews>
-                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0H-5C-Vgu" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="n0H-5C-Vgu" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="371" height="60"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="60" id="bLA-nW-O4b"/>
@@ -404,7 +404,7 @@
                                             <rect key="frame" x="10" y="10" width="371" height="725"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="uK5-bg-pfZ" userLabel="LoansHeader">
-                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="80"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="36"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trh-8t-rLA">
                                                             <rect key="frame" x="0.0" y="0.0" width="337" height="33"/>
@@ -426,18 +426,21 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="HLX-89-F3B"/>
+                                                    </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XHf-7t-l4l" userLabel="LoansFillDetails">
-                                                    <rect key="frame" x="0.0" y="113" width="371" height="539"/>
+                                                    <rect key="frame" x="0.0" y="69" width="371" height="583"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FGl-li-UNe" userLabel="Present Value Stack">
-                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="108.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="buf-2X-sRS">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="34.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="37.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEB-r6-PtA" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="34.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="37.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -445,10 +448,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1r2-oi-j6L">
-                                                                    <rect key="frame" x="0.0" y="39.5" width="371" height="60.5"/>
+                                                                    <rect key="frame" x="0.0" y="42.5" width="371" height="66"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-aF-fxO" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="60.5"/>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-aF-fxO" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="66"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -457,13 +460,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Du4-Dp-0qq" userLabel="Interest Stack">
-                                                            <rect key="frame" x="0.0" y="110" width="371" height="99.5"/>
+                                                            <rect key="frame" x="0.0" y="118.5" width="371" height="108.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R3u-rr-8kk">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="34.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="37.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest(%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXq-Jc-teA" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="34.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="37.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -471,10 +474,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9E2-g0-crT">
-                                                                    <rect key="frame" x="0.0" y="39.5" width="371" height="60"/>
+                                                                    <rect key="frame" x="0.0" y="42.5" width="371" height="66"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-1N-VNX" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="60"/>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-1N-VNX" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="66"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -489,13 +492,13 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l8o-St-u3I" userLabel="No of Pay Stack">
-                                                            <rect key="frame" x="0.0" y="219.5" width="371" height="100"/>
+                                                            <rect key="frame" x="0.0" y="237" width="371" height="109"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bbu-YI-RZR">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="34.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="37.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4f-5P-EA4" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="34.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="37.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -503,10 +506,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qWN-4j-xxE">
-                                                                    <rect key="frame" x="0.0" y="39.5" width="371" height="60.5"/>
+                                                                    <rect key="frame" x="0.0" y="42.5" width="371" height="66.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-oJ-6MG" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="60.5"/>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-oJ-6MG" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="66.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -521,13 +524,13 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0kH-LP-cKK" userLabel="Payments year Stack">
-                                                            <rect key="frame" x="0.0" y="329.5" width="371" height="99.5"/>
+                                                            <rect key="frame" x="0.0" y="356" width="371" height="108.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ggN-L2-uSB">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="34.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="37"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toatl number of payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y82-JJ-qIZ" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="34.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="37"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -535,10 +538,10 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="npc-Pe-8xf">
-                                                                    <rect key="frame" x="0.0" y="39.5" width="371" height="60"/>
+                                                                    <rect key="frame" x="0.0" y="42" width="371" height="66.5"/>
                                                                     <subviews>
-                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="66I-fs-qdx" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="60"/>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="66I-fs-qdx" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="66.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textField>
@@ -553,13 +556,13 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UTz-bR-2M0" userLabel="Future Value Stack">
-                                                            <rect key="frame" x="0.0" y="439" width="371" height="100"/>
+                                                            <rect key="frame" x="0.0" y="474.5" width="371" height="108.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d1a-hu-Glp">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="95"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="103.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total amount with interest" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hii-q1-YC9" customClass="CustomLabels" customModule="Estimer" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="95"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="371" height="103.5"/>
                                                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -567,7 +570,7 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k45-wp-Ebk">
-                                                                    <rect key="frame" x="0.0" y="100" width="371" height="0.0"/>
+                                                                    <rect key="frame" x="0.0" y="108.5" width="371" height="0.0"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWg-7J-p1h">
                                                                             <rect key="frame" x="0.0" y="0.0" width="371" height="0.0"/>
@@ -733,7 +736,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jhi-66-3G3">
                                                         <rect key="frame" x="0.0" y="43.5" width="354" height="59.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-59-TWQ" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-59-TWQ" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="59.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -765,7 +768,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CsM-IV-dyw">
                                                         <rect key="frame" x="0.0" y="44" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DoW-Zp-FUI" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DoW-Zp-FUI" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -791,7 +794,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nbO-mF-CD9">
                                                         <rect key="frame" x="0.0" y="44.5" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-tW-95r" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-tW-95r" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -817,7 +820,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Y9q-ng-nSZ">
                                                         <rect key="frame" x="0.0" y="44.5" width="354" height="58.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-8A-yYB" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-8A-yYB" customClass="CustomTextFields" customModule="Estimer" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="58.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>

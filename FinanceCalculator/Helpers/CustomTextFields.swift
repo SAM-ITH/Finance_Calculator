@@ -7,12 +7,12 @@
 
 import UIKit
 
-class CustomTextFields: UITextField {
+class CustomTextFields: UITextField, UITextFieldDelegate {
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.keyboardType = .numberPad
+        self.keyboardType = .decimalPad
         
         self.layer.backgroundColor = UIColor(named: "PrimaryBackground")!.cgColor
         self.layer.cornerRadius = 10

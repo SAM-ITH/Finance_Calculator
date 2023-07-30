@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MortageViewController: UIViewController {
+class MortageViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var MortageLoanAmountTF: CustomTextFields!
     @IBOutlet weak var mortageInterestTF: CustomTextFields!
@@ -21,6 +21,8 @@ class MortageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mortageNoOfYearsTF.delegate = self
 
     }
     
@@ -40,7 +42,7 @@ class MortageViewController: UIViewController {
             // Calculate amount if missing
             let monthlyInterestRate = (interestRate/100)/12
             let denominator = 1 - pow(1+monthlyInterestRate, -years*12)
-            let calculatedAmount = principal*monthlyInterestRate/denominator
+            let calculatedAmount = round(principal*monthlyInterestRate/denominator)/100
             mortagePaymentTF.textColor = UIColor(named: "AnswerColor")
             mortagePaymentTF.text = String(calculatedAmount)
             
@@ -48,7 +50,7 @@ class MortageViewController: UIViewController {
             // Calculate principal if missing
             let monthlyInterestRate = interestRate/1200
             let denominator = 1 - pow(1+monthlyInterestRate, -12*years)
-            let calculatedPrincipal = monthlyPayment * denominator/monthlyInterestRate
+            let calculatedPrincipal = round(monthlyPayment * denominator/monthlyInterestRate)/100
             MortageLoanAmountTF.textColor = UIColor(named: "AnswerColor")
             MortageLoanAmountTF.text = String(calculatedPrincipal)
             
@@ -56,7 +58,7 @@ class MortageViewController: UIViewController {
             // Calculate interest rate if missing
             let monthlyInterestRate = monthlyPayment/(principal/12)
             let denominator = 1 - pow(1 + monthlyInterestRate, -years*12 )
-            let calculatedInterestRate = 100 * (1 - denominator)/monthlyInterestRate
+            let calculatedInterestRate = round(100 * (1 - denominator)/monthlyInterestRate)/100
             mortageInterestTF.textColor = UIColor(named: "AnswerColor")
             mortageInterestTF.text = String(calculatedInterestRate)
             
@@ -116,6 +118,32 @@ class MortageViewController: UIViewController {
          let alert = UIAlertController(title: "Alert", message: "Two or more fileds are empty, Please leave blank only the value you want to count", preferredStyle: .alert)
          alert.addAction(UIAlertAction(title: "OK", style: .default))
          self.present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: bump up the view when the keyboard distrub the textfield
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == mortageNoOfYearsTF {
+            moveViewUpForTextField(textField)
+        }
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == mortageNoOfYearsTF {
+            moveViewDown()
+        }
+    }
+
+    func moveViewUpForTextField(_ textField: UITextField) {
+  
+            UIView.animate(withDuration: 0.3) {
+                self.view.frame.origin.y = -100.0
+            }
+    }
+
+    func moveViewDown() {
+        UIView.animate(withDuration: 0.3) {
+            self.view.frame.origin.y = 0
+        }
     }
     
     

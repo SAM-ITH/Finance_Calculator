@@ -49,7 +49,7 @@ class SavingsViewController: UIViewController, UIScrollViewDelegate {
             // Calculate present is missing
             let x = compoundsPerYear * noOfPaymentsPerYear
             let y = 1 + ((interest/100)/compoundsPerYear)
-            let calculatedPresent = futureValue / pow(y,x)
+            let calculatedPresent = round(futureValue / pow(y,x))
             presentValueTF.textColor = UIColor(named: "AnswerColor")
             presentValueTF.text = String(calculatedPresent)
             
@@ -58,13 +58,13 @@ class SavingsViewController: UIViewController, UIScrollViewDelegate {
             // Calculate principal if missing
             let x = compoundsPerYear * noOfPaymentsPerYear
             let y =  1 + (interest/compoundsPerYear)
-            let calcFutureValue = pow(y,x) * presentValue
+            let calcFutureValue = round(pow(y,x) * presentValue)
             futureValueTF.text = String(calcFutureValue)
             
             if(regularContributionSwitch.isOn && amountOfRegularContribution > 0.0){
                 let interestRate = interest/100
                 let compoundedValue = presentValue * pow(1 + interestRate, compoundsPerYear)
-                let calcFutureValueWithContribution = compoundsPerYear + amountOfRegularContribution * ((pow(1 + interestRate, compoundsPerYear) - 1) / interestRate)
+                let calcFutureValueWithContribution = round(compoundsPerYear + amountOfRegularContribution * ((pow(1 + interestRate, compoundsPerYear) - 1) / interestRate))/100
                 futureValueTF.text = String(calcFutureValueWithContribution)
             } else if (regularContributionSwitch.isOn && amountOfRegularContribution == 0.0){
                 displayContributionFieldsEmptyAlert()
@@ -75,7 +75,7 @@ class SavingsViewController: UIViewController, UIScrollViewDelegate {
             // Calculate interest rate if missing
             let x =  1 / (compoundsPerYear * noOfPaymentsPerYear)
             let y =  futureValue / presentValue
-            let calculatedInterest = (pow(y,x) - 1) * compoundsPerYear * 100
+            let calculatedInterest = round((pow(y,x) - 1) * compoundsPerYear * 100)/100
             interestRateTF.textColor = UIColor(named: "AnswerColor")
             interestRateTF.text = String(calculatedInterest)
             
@@ -84,7 +84,7 @@ class SavingsViewController: UIViewController, UIScrollViewDelegate {
             // Calculate number of payments per year is missing
             let x =  log(futureValue / presentValue)
             let y =   log(1 + ((interest/100)/compoundsPerYear)) * compoundsPerYear
-            let calculatedNoOfPayments = x/y
+            let calculatedNoOfPayments = round(x/y)/100
             noOfPaymentsPerYearTF.textColor = UIColor(named: "AnswerColor")
             noOfPaymentsPerYearTF.text = String(calculatedNoOfPayments)
             
@@ -92,7 +92,7 @@ class SavingsViewController: UIViewController, UIScrollViewDelegate {
             // calculate number of compounds per year
             let x = log(futureValue/presentValue)
             let y = log(1+(interest/100))
-            let calculatedCompoundsPerYear = x/y
+            let calculatedCompoundsPerYear = round(x/y)/100
             compundsPerYearTF.textColor = UIColor(named: "AnswerColor")
             compundsPerYearTF.text = String(calculatedCompoundsPerYear)
         }

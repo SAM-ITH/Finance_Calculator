@@ -45,17 +45,17 @@ class LoanViewController: UIViewController, UITextFieldDelegate {
             // Calculate amount if missing
             let monthlyInterestRate = (interestRate/100)/12
             let denominator = 1 - pow(1+monthlyInterestRate, -totalNumberOfPayments)
-            let calculatedAmount = loanAmount*monthlyInterestRate/denominator
+            let calculatedAmount = round(loanAmount*monthlyInterestRate/denominator)/100
             monthlyPaymentTF.textColor = UIColor(named: "AnswerColor")
             monthlyPaymentTF.text = String(calculatedAmount)
-            let calculatedTotalAmount = calculatedAmount * totalNumberOfPayments
+            let calculatedTotalAmount = round(calculatedAmount * totalNumberOfPayments)/100
             totalLoanAmountLBL.text = String(calculatedTotalAmount)
             
         } else if loanAmount == 0.0 {
             // Calculate loanAmount if missing
             let monthlyInterestRate = interestRate/1200
             let denominator = 1 - pow(1+monthlyInterestRate, -totalNumberOfPayments)
-            let calculatedloanAmount = monthlyPayment * denominator/monthlyInterestRate
+            let calculatedloanAmount = round(monthlyPayment * denominator/monthlyInterestRate)/100
             loanAmountTF.textColor = UIColor(named: "AnswerColor")
             loanAmountTF.text = String(calculatedloanAmount)
             
@@ -63,7 +63,7 @@ class LoanViewController: UIViewController, UITextFieldDelegate {
             // Calculate interest rate if missing
             let monthlyInterestRate = monthlyPayment/(loanAmount/12)
             let denominator = 1 - pow(1 + monthlyInterestRate, -totalNumberOfPayments )
-            let calculatedInterestRate = 100 * (1 - denominator)/monthlyInterestRate
+            let calculatedInterestRate = round(100 * (1 - denominator)/monthlyInterestRate)/100
             InterestTF.textColor = UIColor(named: "AnswerColor")
             InterestTF.text = String(calculatedInterestRate)
             
@@ -138,17 +138,10 @@ class LoanViewController: UIViewController, UITextFieldDelegate {
     }
 
     func moveViewUpForTextField(_ textField: UITextField) {
-        guard let window = UIApplication.shared.keyWindow else { return }
-
-        let textFieldFrame = textField.convert(textField.bounds, to: window)
-        let keyboardHeight = 280.0
-
-        if textFieldFrame.maxY > window.bounds.height - keyboardHeight {
-            let offset = textFieldFrame.maxY - (window.bounds.height - keyboardHeight)
+  
             UIView.animate(withDuration: 0.3) {
-                self.view.frame.origin.y = -offset
+                self.view.frame.origin.y = -100.0
             }
-        }
     }
 
     func moveViewDown() {
