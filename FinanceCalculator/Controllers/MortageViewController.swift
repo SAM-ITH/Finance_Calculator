@@ -14,8 +14,10 @@ class MortageViewController: UIViewController {
     @IBOutlet weak var mortagePaymentTF: CustomTextFields!
     @IBOutlet weak var mortageNoOfYearsTF: CustomTextFields!
     
-    let loanAmount: Double = 0
-    
+    var principal: Double = 0
+    var interestRate: Double = 0
+    var monthlyPayment: Double = 0
+    var years: Double = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +26,54 @@ class MortageViewController: UIViewController {
     
     @IBAction func calculateMortage(_ sender: Any) {
         validateTextFields()
+        calculateMissingElementInMortage()
     }
     
+    // MARK: calculating the missing element
+    func calculateMissingElementInMortage() {
+        principal = Double(MortageLoanAmountTF.text!) ?? 0.0
+        interestRate = Double(mortageInterestTF.text!) ?? 0.0
+        monthlyPayment = Double(mortagePaymentTF.text!) ?? 0.0
+        years = Double(mortageNoOfYearsTF.text!) ?? 0.0
+        
+        // Calculate missing element using compound interest formula
+        if monthlyPayment == 0.0 {
+            // Calculate amount if missing
+            let monthlyInterestRate = (interestRate/100)/12
+            let denominator = 1 - pow(1+monthlyInterestRate, -years*12)
+            let calculatedAmount = principal*monthlyInterestRate/denominator
+            mortagePaymentTF.textColor = UIColor(red: 0.00, green: 0.62, blue: 0.74, alpha: 1.00)
+            mortagePaymentTF.text = String(calculatedAmount)
+            
+        } else if principal == 0.0 {
+            // Calculate principal if missing
+            let monthlyInterestRate = interestRate/1200
+            let denominator = 1 - pow(1+monthlyInterestRate, -12*years)
+            let calculatedPrincipal = monthlyPayment * denominator/monthlyInterestRate
+            MortageLoanAmountTF.textColor = UIColor(red: 0.00, green: 0.62, blue: 0.74, alpha: 1.00)
+            MortageLoanAmountTF.text = String(calculatedPrincipal)
+            
+        } else if interestRate == 0.0 {
+            // Calculate interest rate if missing
+            let monthlyInterestRate = monthlyPayment/(principal/12)
+            let denominator = 1 - pow(1 + monthlyInterestRate, -years*12 )
+            let calculatedInterestRate = 100 * (1 - denominator)/monthlyInterestRate
+            mortageInterestTF.textColor = UIColor(red: 0.00, green: 0.62, blue: 0.74, alpha: 1.00)
+            mortageInterestTF.text = String(calculatedInterestRate)
+            
+        } else if years == 0.0 {
+            // Calculate years if missing
+            let monthlyInterestRate = interestRate/12
+            let denominator = 1 - pow(1 + monthlyInterestRate, -monthlyPayment)
+            let calculatedYears = 12*denominator/monthlyInterestRate
+            mortageNoOfYearsTF.textColor = UIColor(red: 0.00, green: 0.62, blue: 0.74, alpha: 1.00)
+            mortageNoOfYearsTF.text = String(calculatedYears)
+            
+        }
+        
+    }
+    
+    // MARK: validating the text fields
     func validateTextFields() {
         var emptyFieldCount = 0
 
