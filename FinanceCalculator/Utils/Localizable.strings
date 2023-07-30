@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  FinanceCalculator
+
+  Created by Samith on 2023-07-30.
+  
+*/
+
+MortageHelp = "
+You can calculate the mortgage using this interface
+\nLoan amount, Interest  rate, Monthly payment and No of years can be calculated using Mortgage
+\nLeave the text field or the parameter that you want to solve. Please fill the rest of parameters.
+\nBy clicking Saved Data you can filled the fields with the data from the last calculation
+";
+SaveHelp = "
+You can calculate the Savings rates using this interface
+\nPresent value, Interest  rate, Future Value and Future value when regular contrinutions can be calculated.
+\nLeave the text field or the parameter that you want to solve. Please fill the rest of parameters.
+";
+LoanHelp = "
+You can calculate the Loan rate using this interface
+\nLoan amount, Interest  rate, Monthly payment and Total number of payments can be calculated using Loans.
+\nLeave the text field or the parameter that you want to solve. Please fill the rest of parameters.
+\nBy clicking Saved Data you can filled the fields with the data from the last calculation
+";

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "19DC42912A4CA94900BBC177"
-               BuildableName = "FinanceCalculator.app"
+               BuildableName = "Estimer.app"
                BlueprintName = "FinanceCalculator"
                ReferencedContainer = "container:FinanceCalculator.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "19DC42912A4CA94900BBC177"
-            BuildableName = "FinanceCalculator.app"
+            BuildableName = "Estimer.app"
             BlueprintName = "FinanceCalculator"
             ReferencedContainer = "container:FinanceCalculator.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "19DC42912A4CA94900BBC177"
-            BuildableName = "FinanceCalculator.app"
+            BuildableName = "Estimer.app"
             BlueprintName = "FinanceCalculator"
             ReferencedContainer = "container:FinanceCalculator.xcodeproj">
          </BuildableReference>

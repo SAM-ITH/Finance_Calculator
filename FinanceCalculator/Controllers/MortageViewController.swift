@@ -9,6 +9,7 @@ import UIKit
 
 class MortageViewController: UIViewController, UITextFieldDelegate {
 
+    let defaults = UserDefaults.standard
     @IBOutlet weak var MortageLoanAmountTF: CustomTextFields!
     @IBOutlet weak var mortageInterestTF: CustomTextFields!
     @IBOutlet weak var mortagePaymentTF: CustomTextFields!
@@ -28,6 +29,10 @@ class MortageViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func calculateMortage(_ sender: Any) {
         validateTextFields()
+    }
+    
+    @IBAction func appliedPreviousValues(_ sender: Any) {
+        applySavedValuesToTF()
     }
     
     // MARK: calculating the missing element
@@ -100,6 +105,7 @@ class MortageViewController: UIViewController, UITextFieldDelegate {
         } else if emptyFieldCount == 1 {
             // Only one field is empty
             calculateMissingElementInMortage()
+            saveValuesToUserDefaults()
         } else {
             // More than one field is empty
             displayFieldsEmptyAlert()
@@ -118,6 +124,29 @@ class MortageViewController: UIViewController, UITextFieldDelegate {
          let alert = UIAlertController(title: "Alert", message: "Two or more fileds are empty, Please leave blank only the value you want to count", preferredStyle: .alert)
          alert.addAction(UIAlertAction(title: "OK", style: .default))
          self.present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: user defaults
+    func saveValuesToUserDefaults() {
+        defaults.set(principal, forKey: "principal")
+        defaults.set(interestRate, forKey: "mortageinterestRate")
+        defaults.set(monthlyPayment, forKey: "mortagemonthlyPayment")
+        defaults.set(years, forKey: "mortageyears")
+    }
+    
+    func applySavedValuesToTF(){
+        if let principal = defaults.string(forKey: "principal") {
+                MortageLoanAmountTF.text = principal
+            }
+        if let interestRate = defaults.string(forKey: "mortageinterestRate") {
+                mortageInterestTF.text = interestRate
+            }
+        if let monthlyPayment = defaults.string(forKey: "mortagemonthlyPayment") {
+            mortagePaymentTF.text = monthlyPayment
+            }
+        if let years = defaults.string(forKey: "mortageyears") {
+                mortageNoOfYearsTF.text = years
+            }
     }
     
     // MARK: bump up the view when the keyboard distrub the textfield
