@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoanViewController: UIViewController {
+class LoanViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var loanAmountTF: CustomTextFields!
     @IBOutlet weak var InterestTF: CustomTextFields!
@@ -24,14 +24,15 @@ class LoanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        totalNumberOfPaymentsTF.delegate = self
     }
     
 
     @IBAction func calculateLoanBTN(_ sender: Any) {
         validateTextFields()
     }
-    
+     
     // MARK: calculating the missing element
     func calculateMissingElementInLoans() {
         loanAmount = Double(loanAmountTF.text!) ?? 0.0
@@ -121,6 +122,39 @@ class LoanViewController: UIViewController {
          let alert = UIAlertController(title: "Alert", message: "Two or more fileds are empty, Please leave blank only the value you want to count", preferredStyle: .alert)
          alert.addAction(UIAlertAction(title: "OK", style: .default))
          self.present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: bump up the view when the keyboard distrub the textfield
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == totalNumberOfPaymentsTF {
+            moveViewUpForTextField(textField)
+        }
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == totalNumberOfPaymentsTF {
+            moveViewDown()
+        }
+    }
+
+    func moveViewUpForTextField(_ textField: UITextField) {
+        guard let window = UIApplication.shared.keyWindow else { return }
+
+        let textFieldFrame = textField.convert(textField.bounds, to: window)
+        let keyboardHeight = 280.0
+
+        if textFieldFrame.maxY > window.bounds.height - keyboardHeight {
+            let offset = textFieldFrame.maxY - (window.bounds.height - keyboardHeight)
+            UIView.animate(withDuration: 0.3) {
+                self.view.frame.origin.y = -offset
+            }
+        }
+    }
+
+    func moveViewDown() {
+        UIView.animate(withDuration: 0.3) {
+            self.view.frame.origin.y = 0
+        }
     }
     
     
