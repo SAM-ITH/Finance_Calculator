@@ -42,7 +42,7 @@ class MortageViewController: UIViewController {
             let monthlyInterestRate = (interestRate/100)/12
             let denominator = 1 - pow(1+monthlyInterestRate, -years*12)
             let calculatedAmount = principal*monthlyInterestRate/denominator
-            mortagePaymentTF.textColor = UIColor(red: 0.00, green: 0.62, blue: 0.74, alpha: 1.00)
+            mortagePaymentTF.textColor = UIColor(named: "AnswerColor")
             mortagePaymentTF.text = String(calculatedAmount)
             
         } else if principal == 0.0 {
@@ -50,7 +50,7 @@ class MortageViewController: UIViewController {
             let monthlyInterestRate = interestRate/1200
             let denominator = 1 - pow(1+monthlyInterestRate, -12*years)
             let calculatedPrincipal = monthlyPayment * denominator/monthlyInterestRate
-            MortageLoanAmountTF.textColor = UIColor(red: 0.00, green: 0.62, blue: 0.74, alpha: 1.00)
+            MortageLoanAmountTF.textColor = UIColor(named: "AnswerColor")
             MortageLoanAmountTF.text = String(calculatedPrincipal)
             
         } else if interestRate == 0.0 {
@@ -58,7 +58,7 @@ class MortageViewController: UIViewController {
             let monthlyInterestRate = monthlyPayment/(principal/12)
             let denominator = 1 - pow(1 + monthlyInterestRate, -years*12 )
             let calculatedInterestRate = 100 * (1 - denominator)/monthlyInterestRate
-            mortageInterestTF.textColor = UIColor(red: 0.00, green: 0.62, blue: 0.74, alpha: 1.00)
+            mortageInterestTF.textColor = UIColor(named: "AnswerColor")
             mortageInterestTF.text = String(calculatedInterestRate)
             
         } else if years == 0.0 {
@@ -66,7 +66,7 @@ class MortageViewController: UIViewController {
             let monthlyInterestRate = interestRate/12
             let denominator = 1 - pow(1 + monthlyInterestRate, -monthlyPayment)
             let calculatedYears = 12*denominator/monthlyInterestRate
-            mortageNoOfYearsTF.textColor = UIColor(red: 0.00, green: 0.62, blue: 0.74, alpha: 1.00)
+            mortageNoOfYearsTF.textColor = UIColor(named: "AnswerColor")
             mortageNoOfYearsTF.text = String(calculatedYears)
             
         }
