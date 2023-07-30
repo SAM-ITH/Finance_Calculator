@@ -26,7 +26,6 @@ class MortageViewController: UIViewController {
     
     @IBAction func calculateMortage(_ sender: Any) {
         validateTextFields()
-        calculateMissingElementInMortage()
     }
     
     // MARK: calculating the missing element
@@ -63,9 +62,10 @@ class MortageViewController: UIViewController {
             
         } else if years == 0.0 {
             // Calculate years if missing
-            let monthlyInterestRate = interestRate/12
-            let denominator = 1 - pow(1 + monthlyInterestRate, -monthlyPayment)
-            let calculatedYears = 12*denominator/monthlyInterestRate
+            let monthlyInterestRate = interestRate/1200
+            let numerator = log(monthlyPayment) - log(monthlyPayment - (principal*monthlyInterestRate))
+            let denominator = log(1 + monthlyInterestRate)
+            let calculatedYears = ceil((numerator/denominator)/12)
             mortageNoOfYearsTF.textColor = UIColor(named: "AnswerColor")
             mortageNoOfYearsTF.text = String(calculatedYears)
             
@@ -97,7 +97,7 @@ class MortageViewController: UIViewController {
             displayNoFieldsEmptyAlert()
         } else if emptyFieldCount == 1 {
             // Only one field is empty
-            print("wait we will count this")
+            calculateMissingElementInMortage()
         } else {
             // More than one field is empty
             displayFieldsEmptyAlert()

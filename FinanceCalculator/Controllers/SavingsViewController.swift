@@ -56,7 +56,7 @@ class SavingsViewController: UIViewController, UIScrollViewDelegate {
             
         } else if futureValue == 0.0 {
             // Calculate principal if missing
-            let x = noOfPaymentsPerYear * noOfPaymentsPerYear
+            let x = compoundsPerYear * noOfPaymentsPerYear
             let y =  1 + (interest/compoundsPerYear)
             let calcFutureValue = pow(y,x) * presentValue
             futureValueTF.text = String(calcFutureValue)
