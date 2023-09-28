@@ -58,19 +58,19 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
+[![Product Name Screen Shot][product-screenshot]
 
 - Main requirment for this project as follows 
 
 You are to create a financial app for the iPhone. The app shall have the capability of undertaking typical financial calculations such as savings, loans, and mortgages. The app shall have the ability to solve for one unknown from the given parameters noted in bold:
 
-N – total number of payments (synonymous with time of loan/saving period)
-r (%) – interest rate
-P – present value
-PMT – Payment A – future value
-PayPY – number of payments per year
-CpY – number of compound payments per year
-PmtAt – payment due at the beginning or end of each period (default is END)
+- N – total number of payments (synonymous with time of loan/saving period)
+- r (%) – interest rate
+- P – present value
+- PMT – Payment A – future value
+- PayPY – number of payments per year
+- CpY – number of compound payments per year
+- PmtAt – payment due at the beginning or end of each period (default is END)
 
 The app shall split typical financial problems up over typically four/five views: 1) Compound Interest savings (fixed sum investment with no further payments)
 2) Savings – compound interest with regular contributions (this is savings where there might be sum invested with a subsequent further monthly contribution)
@@ -141,7 +141,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Mechacoder](https://twitter.com/Mechacoder) - email@email_client.com
+Your Name - [@Mechacoder](https://twitter.com/Mechacoder)
 
 Project Link: [https://github.com/SAM-ITH/Finance_Calculator](https://github.com/SAM-ITH/Finance_Calculator)
 
