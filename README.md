@@ -45,18 +45,11 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <a href="#getting-started">Requirments</a>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -65,9 +58,25 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `SAM-ITH`, `Finance_Calculator`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+- Main requirment for this project as follows 
+
+You are to create a financial app for the iPhone. The app shall have the capability of undertaking typical financial calculations such as savings, loans, and mortgages. The app shall have the ability to solve for one unknown from the given parameters noted in bold:
+
+N – total number of payments (synonymous with time of loan/saving period)
+r (%) – interest rate
+P – present value
+PMT – Payment A – future value
+PayPY – number of payments per year
+CpY – number of compound payments per year
+PmtAt – payment due at the beginning or end of each period (default is END)
+
+The app shall split typical financial problems up over typically four/five views: 1) Compound Interest savings (fixed sum investment with no further payments)
+2) Savings – compound interest with regular contributions (this is savings where there might be sum invested with a subsequent further monthly contribution)
+3) Loans - compound interest with regular payments 4) Mortgage
+In addition to this the software shall contain a help view that will contain instructions and guidance to the user on how to use the software. You have complete freedom on how to implement this view and this can be done as separate view or modal context views for example, e.g. a pop- overview activated by a help button.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -75,94 +84,49 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Swift](https://www.swift.org)
+* [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Requirments
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/SAM-ITH/Finance_Calculator.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+- The software shall allow the user to estimate interest rate based on other financial data given in Table 1 - Financial parameters.
+- The software shall allow the user to estimate final value based on other financial data given in Table 1 - Financial parameters.
+- The software shall allow the user to estimate present value based on other financial data given in Table 1 - Financial parameters.
+- The software shall allow the user to estimate the payment based on other financial data given in Table 1 - Financial parameters.
+- The software shall allow the user to estimate number of payments based on other financial data given in Table 1 - Financial parameters.
+- The software shall persistently save all user data. (History of all calculations)
+- The software shall provide a help view Notes:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+A user wishes to calculate the interest required to return a future value for a fixed initial investment sum over a known period of time. E.g. A user wishes to know if they invest Rs.100,000 for 5 years, what interest rate would be required to return a future value of Rs.300,000.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+A user wishes to calculate the length of time (number of compound payments) required to return a future value for a known fixed initial investment given a known interest rate.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+E.g. A user wished to know how long it would be before an investment of Rs.100,000 at an interest rate of 4% returned a future value of Rs.300,000.
 
+A user wishes to calculate the initial investment (present value) that will return a known future value given a known interest rate and investment period (time).
 
+1. For the purpose of this application all payments and compound interest and be considered to be monthly. So, for example 60 payments is equivalent to 5 years.
+2. If the app is backgrounded or closed by the user or runtime, all user data will be preserved persistently and the entry text fields repopulated with the last data used when the app is started or foregrounded.
+3. Compounds are monthly payments from the interest on a on savings or are the monthly interest charges on a loan.
 
-<!-- ROADMAP -->
-## Roadmap
+E.g. A user wished to know how much to initially invest to get a future value of Rs.300,000 on a savings account with an interest rate of 4% over a 5-year period.
+E.g. A user wished to know how much to initially invest to get a future value of Rs.500,000 on a savings account with an interest rate of 4% over a 5-year period where they make monthly payments into their savings account of Rs.10,000.
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/SAM-ITH/Finance_Calculator/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Note that loans are very similar to the above, for example, a user wished to borrow Rs.300,000, they can afford to pay Rs.35,000 a month, how many
+monthly payments (remember this is the same as time) would they need to make if the best loan interest rate they could get was 7%?
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -177,20 +141,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@Mechacoder](https://twitter.com/Mechacoder) - email@email_client.com
 
 Project Link: [https://github.com/SAM-ITH/Finance_Calculator](https://github.com/SAM-ITH/Finance_Calculator)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -209,5 +162,5 @@ Project Link: [https://github.com/SAM-ITH/Finance_Calculator](https://github.com
 [license-shield]: https://img.shields.io/github/license/SAM-ITH/Finance_Calculator.svg?style=for-the-badge
 [license-url]: https://github.com/SAM-ITH/Finance_Calculator/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/samithwijesighe
 [product-screenshot]: images/screenshot.png
